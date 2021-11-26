@@ -61,6 +61,7 @@ jobs:
             #heroku ps:scale web=1 -a $HEROKU_APP_NAME
             heroku container:push web -a $HEROKU_APP_NAME
             heroku container:release web -a $HEROKU_APP_NAME
+
 workflows:
   build-test-deploy:
     jobs:
